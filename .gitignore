@@ -1,0 +1,35 @@
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+# secrets
+.env
+.env.*
+!.env.example
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# Node
+node_modules/
+# Office lock files
+~$*
+# Ruflo / claude-flow state
+.claude-flow/
+.swarm/
+
+# downloaded market data (re-fetchable; the providers' terms don't allow redistributing it)
+data/*.csv
+data/*.parquet
+data/intraday/
+
+# live progress log of the long backtest
+data/daytrade/longrun.log
+data/daytrade/longrun.err
+
+# everything generated at runtime: downloaded market data, paper ledger, reports
+data/
